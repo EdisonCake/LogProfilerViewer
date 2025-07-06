@@ -88,12 +88,11 @@ Entre uma música no Just Dance e um surto, ele resolveu fazer isso aqui 🕺
 
 ---
 
-## 📷 Preview
+## 🖼️ Preview
 
-Exibição customizada (colorida) para funções customizadas, e codeblocks.
+Exibição customizada (colorida) para funções customizadas e codeblocks.
 ![Preview](LogProfileView/assets/img/LogProfilerView_preview.png)
 
----
 
 ## 📃 Licença
 
