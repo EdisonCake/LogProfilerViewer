@@ -91,7 +91,7 @@ Entre uma música no Just Dance e um surto, ele resolveu fazer isso aqui 🕺
 ## 📷 Preview
 
 Exibição customizada (colorida) para funções customizadas, e codeblocks.
-![image](LogProfileView/assets/img/LogProfilerView_preview.png)
+![Preview](LogProfileView/assets/img/LogProfilerView_preview.png)
 
 ---
 
