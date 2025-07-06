@@ -91,8 +91,8 @@ Entre uma música no Just Dance e um surto, ele resolveu fazer isso aqui 🕺
 ## 🖼️ Preview
 
 Exibição customizada (colorida) para funções customizadas e codeblocks.
-![Preview]([LogProfileView/assets/img/LogProfilerView_preview.png](https://raw.githubusercontent.com/EdisonCake/LogProfilerViewer/refs/heads/main/LogProfileView/assets/img/LogProfilerView_preview.png))
 
+![Preview](https://raw.githubusercontent.com/EdisonCake/LogProfilerViewer/main/LogProfileView/assets/img/LogProfilerView_preview.png)
 
 ## 📃 Licença
 
