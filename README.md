@@ -33,7 +33,6 @@ LogProfilerView/
 ├── LogProfilerView.java
 ├── iniciar.bat                # Executável de atalho para Windows
 ├── start.sh                   # Executável de atalho para Linux/macOS
-├── README.md                  # Este arquivo
 ```
 
 ---
@@ -85,14 +84,14 @@ chmod +x iniciar.sh
 ## 🧁 Autor
 
 Desenvolvido por [Edison Luiz (Cake)](https://github.com/edisoncake)  
-Entre uma música no Just Dance e outra no Rock Band, ele resolveu fazer isso aqui 🕺🎸
+Entre uma música no Just Dance e um surto, ele resolveu fazer isso aqui 🕺
 
 ---
 
 ## 📷 Preview
 
-![image](https://github.com/user-attachments/assets/fd5eca02-38df-4066-82d1-c46c2c9fcb03)
-
+Exibição customizada (colorida) para funções customizadas, e codeblocks.
+![image](https://github.com/user-attachments/assets/70c8087e-73a4-4b74-af95-d76d0d9a23a7)
 
 ---
 
