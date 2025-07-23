@@ -1,0 +1,18 @@
+======= LOG DE EXECUÇÃO - 16/07/2025 23:49:24,82 ======= 
+Compilando com FlatLaf... 
+warning: [options] bootstrap class path is not set in conjunction with -source 8
+  not setting the bootstrap class path may lead to class files that cannot run on JDK 8
+    --release 8 is recommended instead of -source 8 -target 8 because it sets the bootstrap class path automatically
+warning: [options] source value 8 is obsolete and will be removed in a future release
+warning: [options] target value 8 is obsolete and will be removed in a future release
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+Note: src\LogProfilerView.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+4 warnings
+Criando JAR... 
+Executando o programa... 
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by com.formdev.flatlaf.util.NativeLibrary in an unnamed module (file:/C:/Users/ediso/OneDrive/Documents/Estudos/Java/LogProfilerViewer/lib/flatlaf-3.4.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
