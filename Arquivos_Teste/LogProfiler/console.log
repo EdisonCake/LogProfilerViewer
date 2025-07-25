@@ -6,6 +6,70 @@ Please wait...
 2025-06-24T11:21:19.526000-03:00 1008|*** SERVER BUILD WITH LOCKSERVER CLIENT SINGLE CONNECTION
 2025-06-24T11:21:19.526000-03:00 1008|*** SERVER BUILD WITH DUAL-STACK SOCKETS FOR IPV6 IMPLEMENTATION
 2025-06-24T11:21:19.526000-03:00 1008|*** DEFAULT SOCKET BIND IS IPV4 
+--- BEGIN APP PROFILER ( THREAD [1488] ) ----------------------
+[program: SIGACOM]
+[user: edison.luiz]
+[computer: SPIPN500100375]
+[environment: Environment]
+[rpodb: top]
+[localfiles: CTREE]
+[begin: Sat Jun 28 12:50:55 2025]
+[spent: 00:05:39]
+[build: 7.00.210324P-20231005]
+[thread: 1488]
+[dbthread: 18812]
+[remark: [QUIT] Emp :99/01 Logged :Administrador             SIGACOM  Obj :Main Window]
+
+[conn_ios_in: 768]
+[conn_bytes_in: 39540]
+[conn_peakbytes_in: 406]
+[conn_ios_out: 768]
+[conn_bytes_out: 648772]
+[conn_peakbytes_out: 66750]
+
+
+------------------------ ADITIONAL MEMORY INFO - RUNNING ENV ----------
+Constant List Count .....    23091 Size     342005 Bytes
+Macro Array Cache Count .        2 Size        123 Bytes
+Program List Count ......      478
+-----------------------------------------------------------------------
+2025-06-28T12:56:34.094000-03:00 1488|[Thread  1488] 
+Total Internal Calls          378645 Timer     82.732 s.
+Total ClMethod Calls            4976 Timer    103.609 s.
+Total User APO Calls          125165 Timer    812.954 s.
+
+2025-06-28T12:56:34.094000-03:00 1488|[Thread  1488] --- CALLS DETAILED INFO ( SORT BY NAME ) ---
+
+2025-06-28T12:56:34.095000-03:00 1488|[Thread  1488] 
+CALL             FWLOGPROFILER (FWLOGPROFILER.PRW) C        1 T    15.580 M    15.580
+2025-06-28T12:56:34.095000-03:00 1488|[Thread  1488] -- FROM    LOGPRFCLICK (HDMAPAURA.PRX) LN   1517 C        1 T    15.580 M    15.580
+2025-06-28T12:56:34.095000-03:00 1488|[Thread  1488] 
+CALL FWLOGPROFILERWRITER:DEACTIVATE (FWLOGPROFILER.PRW) C        1 T     0.024 M     0.024
+2025-06-28T12:56:34.095000-03:00 1488|[Thread  1488] -- FROM FWLOGPROFILER (FWLOGPROFILER.PRW) LN     60 C        1 T     0.024 M     0.024
+2025-06-28T12:56:34.095000-03:00 1488|[Thread  1488] 
+CALL  FWWIZARDCONTROL:ACTIVATE (FWWIZARDCONTROL.PRW) C        1 T    19.325 M    19.325
+2025-06-28T12:56:34.095000-03:00 1488|[Thread  1488] -- FROM   OLDHDMAPAURA (HDMAPAURA.PRX) LN    315 C        1 T    19.325 M    19.325
+2025-06-28T12:56:34.095000-03:00 1488|[Thread  1488] 
+CALL                 HDMAPAURA (  HDMAPAURA.PRX) C        1 T    19.460 M    19.460
+2025-06-28T12:56:34.095000-03:00 1488|[Thread  1488] -- FROM    #CODEBLOCK# (HDMAPAURA.PRX) LN    324 C        1 T    19.460 M    19.460
+2025-06-28T12:56:34.095000-03:00 1488|[Thread  1488] 
+CALL               LOGPRFCLICK (  HDMAPAURA.PRX) C        1 T    15.580 M    15.580
+2025-06-28T12:56:34.095000-03:00 1488|[Thread  1488] -- FROM    #CODEBLOCK# (HDMAPAURA.PRX) LN   1471 C        1 T    15.580 M    15.580
+2025-06-28T12:56:34.095000-03:00 1488|[Thread  1488] 
+CALL              OLDHDMAPAURA (  HDMAPAURA.PRX) C        1 T    19.455 M    19.455
+2025-06-28T12:56:34.095000-03:00 1488|[Thread  1488] -- FROM      HDMAPAURA (HDMAPAURA.PRX) LN     35 C        1 T    19.455 M    19.455
+2025-06-28T12:56:34.095000-03:00 1488|[Thread  1488] 
+CALL          TDIALOG:ACTIVATE (       Internal) C        1 T    19.250 M    19.250
+2025-06-28T12:56:34.095000-03:00 1488|[Thread  1488] -- FROM FWWIZARDCONTROL:ACTIVATE (FWWIZARDCONTROL.PRW) LN    173 C        1 T    19.250 M    19.250
+2025-06-28T12:56:34.095000-03:00 1488|[Thread  1488] --- SOURCE DETAILED INFO ---
+
+2025-06-28T12:56:34.095000-03:00 1488|[Thread  1488]              FWLOGPROFILER.PRW 06/10/2023 09:02:56 [FULL]
+2025-06-28T12:56:34.095000-03:00 1488|[Thread  1488]            FWWIZARDCONTROL.PRW 06/10/2023 09:02:56 [FULL]
+2025-06-28T12:56:34.095000-03:00 1488|[Thread  1488]                  HDMAPAURA.PRX 06/10/2023 09:02:56 [FULL]
+2025-06-28T12:56:34.095000-03:00 1488|[Thread  1488] 
+--- MEMORY LOG PROFILER ---
+
+2025-06-28T12:56:34.095000-03:00 1488|[Thread  1488] --- END APP PROFILER ---
 2025-06-24T11:21:19.526000-03:00 1008|*** SERVER BUILD WITH TRACK UNRELEASED LOCKS IMPLEMENTATION
 2025-06-24T11:21:19.528000-03:00 1008|*** SERVER BUILT WITH STRING_STRICT_SIZE OPTIMIZATION ***
 2025-06-24T11:21:19.528000-03:00 1008|
@@ -14046,6 +14110,75 @@ Application Server: 20.3.2.1
                        WThread ... 10
                     SockServer ... 1
 
+
+
+
+
+
+--- BEGIN APP PROFILER ( THREAD [1745] ) ----------------------
+[program: SIGACOM]
+[user: edison.luiz]
+[computer: SPIPN500100375]
+[environment: Environment]
+[rpodb: top]
+[localfiles: CTREE]
+[begin: Sat Jun 28 12:50:55 2025]
+[spent: 00:05:39]
+[build: 7.00.210324P-20231005]
+[thread: 1745]
+[dbthread: 18812]
+[remark: [QUIT] Emp :99/01 Logged :Administrador             SIGACOM  Obj :Main Window]
+
+[conn_ios_in: 768]
+[conn_bytes_in: 39540]
+[conn_peakbytes_in: 406]
+[conn_ios_out: 768]
+[conn_bytes_out: 648772]
+[conn_peakbytes_out: 66750]
+
+
+------------------------ ADITIONAL MEMORY INFO - RUNNING ENV ----------
+Constant List Count .....    23091 Size     342005 Bytes
+Macro Array Cache Count .        2 Size        123 Bytes
+Program List Count ......      478
+-----------------------------------------------------------------------
+2025-06-28T12:56:34.094000-03:00 1745|[Thread  1745] 
+Total Internal Calls          378645 Timer     82.732 s.
+Total ClMethod Calls            4976 Timer    103.609 s.
+Total User APO Calls          125165 Timer    812.954 s.
+
+2025-06-28T12:56:34.094000-03:00 1745|[Thread  1745] --- CALLS DETAILED INFO ( SORT BY NAME ) ---
+
+2025-06-28T12:56:34.095000-03:00 1745|[Thread  1745] 
+CALL             FWLOGPROFILER (FWLOGPROFILER.PRW) C        1 T    15.580 M    15.580
+2025-06-28T12:56:34.095000-03:00 1745|[Thread  1745] -- FROM    LOGPRFCLICK (HDMAPAURA.PRX) LN   1517 C        1 T    15.580 M    15.580
+2025-06-28T12:56:34.095000-03:00 1745|[Thread  1745] 
+CALL FWLOGPROFILERWRITER:DEACTIVATE (FWLOGPROFILER.PRW) C        1 T     0.024 M     0.024
+2025-06-28T12:56:34.095000-03:00 1745|[Thread  1745] -- FROM FWLOGPROFILER (FWLOGPROFILER.PRW) LN     60 C        1 T     0.024 M     0.024
+2025-06-28T12:56:34.095000-03:00 1745|[Thread  1745] 
+CALL  FWWIZARDCONTROL:ACTIVATE (FWWIZARDCONTROL.PRW) C        1 T    19.325 M    19.325
+2025-06-28T12:56:34.095000-03:00 1745|[Thread  1745] -- FROM   OLDHDMAPAURA (HDMAPAURA.PRX) LN    315 C        1 T    19.325 M    19.325
+2025-06-28T12:56:34.095000-03:00 1745|[Thread  1745] 
+CALL                 HDMAPAURA (  HDMAPAURA.PRX) C        1 T    19.460 M    19.460
+2025-06-28T12:56:34.095000-03:00 1745|[Thread  1745] -- FROM    #CODEBLOCK# (HDMAPAURA.PRX) LN    324 C        1 T    19.460 M    19.460
+2025-06-28T12:56:34.095000-03:00 1745|[Thread  1745] 
+CALL               LOGPRFCLICK (  HDMAPAURA.PRX) C        1 T    15.580 M    15.580
+2025-06-28T12:56:34.095000-03:00 1745|[Thread  1745] -- FROM    #CODEBLOCK# (HDMAPAURA.PRX) LN   1471 C        1 T    15.580 M    15.580
+2025-06-28T12:56:34.095000-03:00 1745|[Thread  1745] 
+CALL              OLDHDMAPAURA (  HDMAPAURA.PRX) C        1 T    19.455 M    19.455
+2025-06-28T12:56:34.095000-03:00 1745|[Thread  1745] -- FROM      HDMAPAURA (HDMAPAURA.PRX) LN     35 C        1 T    19.455 M    19.455
+2025-06-28T12:56:34.095000-03:00 1745|[Thread  1745] 
+CALL          TDIALOG:ACTIVATE (       Internal) C        1 T    19.250 M    19.250
+2025-06-28T12:56:34.095000-03:00 1745|[Thread  1745] -- FROM FWWIZARDCONTROL:ACTIVATE (FWWIZARDCONTROL.PRW) LN    173 C        1 T    19.250 M    19.250
+2025-06-28T12:56:34.095000-03:00 1745|[Thread  1745] --- SOURCE DETAILED INFO ---
+
+2025-06-28T12:56:34.095000-03:00 1745|[Thread  1745]              FWLOGPROFILER.PRW 06/10/2023 09:02:56 [FULL]
+2025-06-28T12:56:34.095000-03:00 1745|[Thread  1745]            FWWIZARDCONTROL.PRW 06/10/2023 09:02:56 [FULL]
+2025-06-28T12:56:34.095000-03:00 1745|[Thread  1745]                  HDMAPAURA.PRX 06/10/2023 09:02:56 [FULL]
+2025-06-28T12:56:34.095000-03:00 1745|[Thread  1745] 
+--- MEMORY LOG PROFILER ---
+
+2025-06-28T12:56:34.095000-03:00 1745|[Thread  1745] --- END APP PROFILER ---
 ----------- Detailed Process List ---- (*1)
 [      4244][       0.000 Kb][         Thread][ tMemoryMonitor][]
 [     23404][       0.000 Kb][         Thread][    tJobManager][]
