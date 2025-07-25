@@ -1,7 +1,7 @@
-# 💻 LogProfiler View (Java Edition)
+# 💻 LogProfiler View (Java Edition) — v4.0
 
-Programa para a leitura de arquivos `.log` do Protheus, gerados a partir das configurações do AppServer ou direto na execução da rotina com `SHIFT + F6`.  
-Ideal para desenvolvedores, analistas e entusiastas que lidam com logs de execução no dia a dia e querem uma ferramenta visual rápida, prática e gratuita.
+Ferramenta visual para leitura e análise de arquivos `.log` e `.csv` do **Protheus**, com foco em produtividade, clareza e agilidade.  
+Ideal para desenvolvedores, analistas e entusiastas que lidam com logs de execução e dados exportados no dia a dia.
 
 ---
 
@@ -13,84 +13,148 @@ Ideal para desenvolvedores, analistas e entusiastas que lidam com logs de execu�
 
 ## ✨ Principais Funcionalidades
 
-* ✅ Leitura de arquivos `console.log`, `LogProfiler` e agora também `error.log` do Protheus, com identificação e separação correta de funções, chamadas, ocorrências, ambientes e queries utilizadas.
+* ✅ Leitura de arquivos `console.log`, `LogProfiler`, `error.log` e agora também arquivos de **exportaDados** (`.csv`) do Protheus.
 * 🔍 Filtro dinâmico e inteligente por nome de função e termos encontrados no **callstack**.
-* 🧹 Botão para limpar filtros com resgate imediato da pilha original.
-* 📁 Identificação automática do tipo de arquivo carregado (`SHIFT+F6`, `console.log`, `error.log`).
-* 🎯 Botões de filtro rápido:
-  * `Exibir Customizados (U_)`
-  * `Exibir Funções Internas`
+* 📁 Identificação automática do tipo de arquivo carregado (`SHIFT+F6`, `console.log`, `error.log`, `exportaDados.csv`).
+* 🧾 Campo adicional com o nome do arquivo e ambiente (produção, homologação, teste).
 * 💥 Exibição centralizada ao abrir o programa.
-* 🧾 Campo adicional com o nome do arquivo carregado.
 * 🧪 Título da janela atualizado dinamicamente com o nome do log aberto.
 * 📈 Tabelas ordenáveis via clique no cabeçalho.
 * 🧪 Suporte a testes manuais via clique direto ou execução por `.bat`.
-* 🎨 Visual renovado, mais moderno e agradável para facilitar a análise.
-* 🛠 Visualização detalhada para `error.log`, com separação das ocorrências, ambientes, callstack e queries quando presentes.
+* 🎨 Visual renovado e mais moderno para facilitar a análise.
+* 🛠 Visualização detalhada para `error.log`, com separação de ocorrências, ambientes, callstack e queries.
+* 📋 Copiar query diretamente da guia de erro para análise rápida.
+* ⚖️ **Comparação automática de arquivos `.csv`**, com destaque das divergências entre os dados.
+* 🧭 Identificação do ambiente de origem de cada arquivo comparado.
 
 ---
 
-## ▶️ Como Executar
+📦 Instruções de Uso
 
-### 🔵 Windows
+Após baixar o repositório ou os arquivos disponibilizados no GitHub, siga os passos abaixo para executar o LogProfilerView:
 
-Basta dar **dois cliques** no arquivo:
+🔹 1. Baixe o repositório
+Você pode baixar o projeto diretamente pelo botão Code > Download ZIP ou via Git:
+``git clone https://github.com/EdisonCake/LogProfilerViewer.git``
 
-```bat
-IniciarLogProfiler.bat
+
+🔹 2. Escolha sua plataforma
+
+🖥️ Windows
+- Navegue até a pasta ``App/Windows/``
+- Dê dois cliques no arquivo ``IniciarLogProfiler.bat``
+
+Isso abrirá a interface gráfica do LogProfiler View.
+
+🍏 macOS
+- Navegue até ``App/MacOS/LogProfilerView.app/Contents/MacOS``
+- Execute o binário: ``./LogProfilerView``
+
+Se necessário, dê permissão de execução:
+``chmod +x LogProfilerView``
+
+🐧 Linux
+- Navegue até a raiz do projeto
+- Dê permissão ao script:
+``chmod +x start.sh``
+
+- Execute:
+``./start.sh``
+
+
+📂 3. Carregando arquivos
+Você pode carregar os seguintes tipos de arquivos:
+- console.log, LogProfiler.log, error.log
+- Arquivos .csv gerados por exportaDados do Protheus
+O programa identifica automaticamente o tipo de arquivo e exibe a interface correspondente.
+
+
+⚖️ 4. Comparação de arquivos .csv
+- Carregue dois arquivos .csv de exportação
+- Informe o ambiente de origem de cada um (produção, homologação, teste)
+- Clique no botão Comparar
+- O programa exibirá as divergências entre os arquivos, destacando os campos diferentes
+
+🧾 5. Guia de Erros (error.log)
+- Exibe ocorrências separadas por ambiente, função e callstack
+- Se houver erro de query, você pode copiar a query diretamente para análise
+
+✅ Dicas
+- Use os botões rápidos para filtrar funções customizadas (U_) ou internas
+- Clique nos cabeçalhos das tabelas para ordenar os dados
+- Use o botão de limpar filtros para restaurar a visualização original
+
+---
+📁 Estrutura do Repositório:
+
 ```
-
-### 🔸 Linux/macOS
-
-1. Dê permissão de execução no script:
-
-```bash
-chmod +x start.sh
-./start.sh
+LogProfilerViewer/
+├── App/
+│   ├── assets/
+│   │   └── img/ <-- Imagens/prévias da aplicação
+│   ├── MacOS/
+│   │   └── LogProfilerView.app/ <-- Aplicativo para rodar no MAC apenas com um clique.
+│   │       └── Contents/
+│   │           ├── MacOS/
+│   │           │   └── LogProfilerView
+│   │           ├── Resources/
+│   │           │   └── LogProfilerView.jar
+│   │           └── Info.plist
+│   └── Windows/
+│       ├── iniciar.bat             <-- Pode iniciar tanto por aqui
+│       └── LogProfilerView.jar     <-- quanto por aqui!
 ```
+---
+🔍 Detalhes:
+- App/assets/img/: Contém imagens de preview da interface.
+- App/MacOS/: Estrutura do aplicativo para macOS, com binários e recursos.
+- App/Windows/: Scripts e JAR para execução no Windows.
 
 ---
-
-## 📝 Requisitos
-
-* Java **11 ou superior** instalado  
-* Sistema com suporte a interface gráfica (Swing)
+📝 Requisitos
+- Java 11 ou superior instalado
+- Sistema com suporte a interface gráfica (Swing)
 
 ---
+🖥️ Galeria:
 
-## 📌 Observações
+⚖️ Interface simples
+<div align="center"><img src="LogProfilerViewer/App/assets/img/LogProfilerView_feature 2025-07-25 172719.png" alt="Interface simples" width="600"/><br><em>Visualização separada de threads, rotinas e filtros.</em></div>
 
-* O programa **não coleta dados**, **não envia informações** para a internet e funciona 100% offline.  
-* Foco principal é a análise de logs `CALL`, `-- FROM` e agora também `error.log`, com visual amigável e suporte a contextos complexos.  
-* Versão atual: `v3.0 Alpha`
+🛠 Visualização Detalhada de error.log
+<div align="center"><img src="LogProfilerViewer/App/assets/img/LogProfilerView_feature 2025-07-25 172743.png" alt="Visualização Detalhada de error.log" width="600"/><br><em>Separação clara por ocorrência, ambiente, função e callstack.</em></div>
+
+📋 Copiar Query para Análise
+<div align="center"><img src="LogProfilerViewer/App/assets/img/LogProfilerView_feature 2025-07-25 172746.png" alt="Query copiável" width="600"/><br><em>Erro de query? Copie com um clique para investigar diretamente no banco.</em></div>
+
+🔍 Comparação de CSVs
+<div align="center"><img src="LogProfilerViewer/App/assets/img/LogProfilerView_feature 2025-07-25 172750.png" alt="Comparação de CSVs" width="600"/><br><em>Filtragem inteligente por nome de função e termos do callstack.</em></div>
+
+🎨 Seleção de ambiente
+<div align="center"><img src="LogProfilerViewer/App/assets/img/LogProfilerView_feature 2025-07-25 172820.png" alt="Seleção de Ambiente" width="600"/><br><em>Selecione qual a origem do arquivo sendo analisado para melhor identificação visual.</em></div>
+
+<div align="center"><img src="LogProfilerViewer/App/assets/img/LogProfilerView_feature 2025-07-25 172840.png" alt="Visualização de ambiente" width="600"/><br></div>
+
+<div align="center"><img src="LogProfilerViewer/App/assets/img/LogProfilerView_feature 2025-07-25 172849.png" alt="Botões rápidos" width="600"/><br></div>
+
 
 ---
-
-## 🔮 Próximas Features (roadmap pessoal)
-
-* Exportação dos resultados filtrados para `.csv`  
-* Multilinguagem (PT-BR/EN)  
-* Histórico de arquivos carregados  
-* Geração de gráficos com tempo das rotinas  
+📌 Observações
+- O programa não coleta dados, não envia informações para a internet e funciona 100% offline.
+- Foco principal é a análise de logs CALL, -- FROM, error.log e agora também arquivos de exportação de dados (.csv).
+- Versão atual: v4.0
 
 ---
+🔮 Próximas Features (roadmap pessoal)
+- Multilinguagem (PT-BR/EN)
+- Modo escuro 🌙
 
-## 🧱 Autor
-
-Desenvolvido por [Edison Luiz (Cake)](https://github.com/edisoncake)  
+---
+🧱 Autor
+Desenvolvido por Edison Luiz (Cake)
 Entre uma música no Just Dance e um surto, ele resolveu fazer essa ferramenta aqui 🕺🥝🚗
 
 ---
-
-## 🗄️ Preview
-
-Exibição customizada (colorida) para funções customizadas, codeblocks e visualização detalhada de erros.
-
-![Preview](https://raw.githubusercontent.com/EdisonCake/LogProfilerViewer/main/LogProfileView/assets/img/LogProfilerView_preview.png)
-
----
-
-## 📃 Licença
-
-Este projeto é open-source sob a licença [MIT](LICENSE).  
+📃 Licença
+Este projeto é open-source sob a licença MIT.
 Use, contribua e compartilhe sem moderação!
