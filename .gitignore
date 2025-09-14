@@ -1,2 +1,5 @@
-LogProfilerViewer/Source/
+LogProfilerViewer/src/
 LogProfilerViewer/IniciarLogProfiler.bat
+LogProfilerViewer/target/
+LogProfilerViewer/pom.xml
+.vscode
