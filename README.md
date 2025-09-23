@@ -38,28 +38,6 @@ Não é necessário ter Java instalado no computador.
 
 ---
 
-## 📁 Estrutura do Repositório
-
-LogProfilerViewer/
-├── App/                <-- Pasta ignorada pelo Git, gerada pelo build.
-│   └── Windows/
-│       └── LogProfiler/    <-- Aplicação Windows auto-contida.
-│           ├── LogProfiler.exe
-│           ├── app/
-│           └── runtime/
-│
-├── src/
-│   └── main/
-│       └── java/
-│           └── LogProfilerView.java
-│
-├── compilar.bat        <-- Script para compilar a versão Windows.
-├── pom.xml             <-- Arquivo de configuração do Maven.
-└── .gitignore          <-- Arquivos ignorados pelo Git.
-
-
----
-
 ## 📝 Requisitos
 
 #### Para Usuários (executar o programa)
