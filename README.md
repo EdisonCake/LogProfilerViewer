@@ -1,13 +1,7 @@
-# 💻 LogProfiler View (Java Edition) — v5.0
+# 💻 LogProfiler View (Java Edition) — v5.1 'The Halloween Update'
 
 Ferramenta visual para leitura e análise de arquivos `.log` e `.csv` do **Protheus**, com foco em produtividade, clareza e agilidade.
 Ideal para desenvolvedores, analistas e entusiastas que lidam com logs de execução e dados exportados no dia a dia.
-
----
-
-## 🧠 Desenvolvido por
-
-**Edison Luiz** com apoio da IA (Gemini), como parte de um projeto pessoal para aprendizado e contribuição à comunidade técnica.
 
 ---
 
@@ -23,6 +17,19 @@ Ideal para desenvolvedores, analistas e entusiastas que lidam com logs de execu�
 * 📈 **Tabelas Ordenáveis**: Organize os dados rapidamente clicando nos cabeçalhos das colunas.
 * 🧭 **Identificação de Ambiente**: Informe o ambiente de origem (produção, homologação, etc.) dos arquivos `.csv` para facilitar a comparação.
 
+
+---
+
+## Changelog:
+
+* Ajustada a barra de título, criando um menu abaixo com a opção de temas.
+* Alterada a lógica de leitura de console.log  para abranger novos formatos de emissão.
+* Corrigida a lógica de agrupamento de Threads na leitura de arquivos de console.log.
+* Inicializando a aplicação com o tema "Arc Dark - Orange" porque é Halloween!
+* Adicionada seção de informações sobre o programa no menu principal.
+* Adicionado link atalho para portifolio online.
+* Adicionados mais temas (pois nunca é demais)!!!
+
 ---
 
 ## 📦 Instruções de Uso
@@ -30,9 +37,9 @@ Ideal para desenvolvedores, analistas e entusiastas que lidam com logs de execu�
 O programa é distribuído como um executável auto-contido para Windows.
 
 #### 🖥️ Windows
-1.  Baixe e descompacte o arquivo `.zip` da versão mais recente na seção **Releases** do GitHub.
+1.  Baixe e descompacte o arquivo `.zip` da versão mais recente.
 2.  Navegue até a pasta `App/Windows/LogProfiler/`.
-3.  Dê dois cliques no arquivo **`LogProfiler.exe`** para iniciar o programa.
+3.  Extraia o .zip e dê dois cliques no arquivo **`LogProfiler.exe`** para iniciar o programa.
 
 Não é necessário ter Java instalado no computador.
 
@@ -49,17 +56,9 @@ Não é necessário ter Java instalado no computador.
 
 ---
 
-## 🔮 Próximas Features (Roadmap)
+## 🧠 Desenvolvido por
 
-* Reintroduzir suporte para macOS e Linux via `jpackage`.
-* Adicionar suporte a múltiplos idiomas (PT-BR / EN).
-* Salvar o último tema utilizado nas preferências do usuário.
-
----
-
-## 🧱 Autor
-
-Desenvolvido por Edison Luiz (Cake)
+**Edison Luiz** com apoio da IA (ChatGPT), como parte de um projeto pessoal para aprendizado e contribuição à comunidade técnica.
 
 ---
 
