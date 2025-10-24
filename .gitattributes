@@ -1,2 +1,0 @@
-LogProfilerViewer/App/app/dist/LogProfiler/runtime/** filter=lfs diff=lfs merge=lfs -text
-LogProfilerViewer/App/runtime/lib/modules filter=lfs diff=lfs merge=lfs -text
